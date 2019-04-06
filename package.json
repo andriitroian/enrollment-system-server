@@ -1,0 +1,22 @@
+{
+  "name": "enrollment-server",
+  "version": "1.0.0",
+  "description": "Server side for final project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriitroian/enrollment-system-server.git"
+  },
+  "author": "Troian & Zacheshygryva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andriitroian/enrollment-system-server/issues"
+  },
+  "homepage": "https://github.com/andriitroian/enrollment-system-server#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
