@@ -1,14 +1,23 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const api = require('./api');
 const app = express();
 const port = 3000;
 
-app.get('/', (request, response) => {
-    response.send('Hello from Express!')
+app.use((req, res, next) => {
+	res.header('Access-Control-Allow-Origin', '*');
+	res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+	next();
 });
 
-app.listen(port, (err) => {
-    if (err) {
-        return console.log('something bad happened', err)
-    }
-    console.log(`server is running on port: ${port}`)
+app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended: true}));
+app.use('/api', api);
+
+app.get('/', (req, res) => {
+	res.send('I\'m just an API').end();
+});
+
+app.listen(port, () => {
+	console.log('Server is ready');
 });
