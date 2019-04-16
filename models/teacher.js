@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const User = require('./user');
+const encrypt = require('../utils').encrypt;
+const ROLE = require('../utils').ROLE;
 
 const TeacherSchema = new mongoose.Schema({
 	email: {
 		type: String,
-		index: true
-	},
-	password: {
-		type: String
+		index: true,
+		unique: true
 	},
 	name: {
 		type: String
@@ -25,8 +25,7 @@ const TeacherSchema = new mongoose.Schema({
 
 TeacherSchema.methods.create = (data) => {
 	return new Promise((res, rej) => {
-		Teacher.findOne({email: data.email}, (er, existingTeacher) => {
-			console.log(existingTeacher);
+		User.findOne({email: data.email}, (er, existingTeacher) => {
 			if (er) {
 				rej(er);
 				return;
@@ -44,8 +43,8 @@ TeacherSchema.methods.create = (data) => {
 				} else {
 					const user = new User({
 						email: teacher.email,
-						password: teacher.password,
-						role: 'Teacher',
+						password: encrypt(data.password),
+						role: ROLE.teacher,
 						pointer: teacher._id
 					});
 					user.populate({

@@ -5,7 +5,7 @@ const mongoClient = new MongoClient('mongodb://localhost/enrollment', { useNewUr
 mongoClient.connect().then((client, err) => {
 
   if(err){
-    return console.log(err);
+    return console.error(err);
   }
   const db = client.db('enrollment');
   const student = db.collection('Student');

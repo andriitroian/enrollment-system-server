@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const User = require('./user');
+const encrypt = require('../utils').encrypt;
+const ROLE = require('../utils').ROLE;
 
 const StudentSchema = new mongoose.Schema({
 	email: {
 		type: String,
-		index: true
-	},
-	password: {
-		type: String
+		index: true,
+		unique: true
 	},
 	name: {
 		type: String
@@ -28,27 +28,24 @@ const StudentSchema = new mongoose.Schema({
 
 StudentSchema.methods.create = (data) => {
 	return new Promise((res, rej) => {
-		Student.findOne({email: data.email}, (er, existingStudent) => {
+		User.findOne({email: data.email}, (er, existingUser) => {
 			if (er) {
 				rej(er);
 				return;
 			}
 			
-			if (existingStudent) {
-				User.findOne({pointer: existingStudent._id}, (e, u) => {
-					if (e) {
-						rej(e);
+			if (existingUser && existingUser.role === ROLE.student) {
+				
+				existingUser.populate({path: 'pointer', model: Student}, (_err, _user) => {
+					if (_err) {
+						rej(_err);
 						return;
 					}
-					u.populate({path: 'pointer', model: Student}, (_err, _user) => {
-						if (_err) {
-							rej(_err);
-							return;
-						}
-						res(_user);
-					})
+					res(_user);
 				});
 				return;
+			} else if (existingUser && existingUser.role !== ROLE.student) {
+				rej('USER_EXISTS');
 			}
 			
 			const student = new Student(data);
@@ -58,8 +55,8 @@ StudentSchema.methods.create = (data) => {
 				} else {
 					const user = new User({
 						email: student.email,
-						password: student.password,
-						role: 'Student',
+						password: encrypt(data.id),
+						role: ROLE.student,
 						pointer: student._id
 					});
 					user.populate({

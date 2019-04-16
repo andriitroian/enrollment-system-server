@@ -2,24 +2,177 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22450ac5-da95-411b-9e80-ea5623420b1e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/api.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/initDB.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/coursework.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/degreeProgram.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/department.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/enrollmentRequest.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/faculty.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/student.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/supervisor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/teacher.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/user.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/utils.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/api.js" afterPath="$PROJECT_DIR$/api.js" />
       <change beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" />
+      <change beforePath="$PROJECT_DIR$/initDB.js" afterPath="$PROJECT_DIR$/initDB.js" />
+      <change beforePath="$PROJECT_DIR$/models/degreeProgram.js" afterPath="$PROJECT_DIR$/models/degreeProgram.js" />
+      <change beforePath="$PROJECT_DIR$/models/department.js" afterPath="$PROJECT_DIR$/models/department.js" />
+      <change beforePath="$PROJECT_DIR$/models/faculty.js" afterPath="$PROJECT_DIR$/models/faculty.js" />
+      <change beforePath="$PROJECT_DIR$/models/student.js" afterPath="$PROJECT_DIR$/models/student.js" />
+      <change beforePath="$PROJECT_DIR$/models/supervisor.js" afterPath="$PROJECT_DIR$/models/supervisor.js" />
+      <change beforePath="$PROJECT_DIR$/models/teacher.js" afterPath="$PROJECT_DIR$/models/teacher.js" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" afterPath="$PROJECT_DIR$/models/user.js" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie-parser/HISTORY.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie-parser/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie-parser/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie-parser/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie-parser/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/HISTORY.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/History.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/Readme.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/lib/browser/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/node_modules/depd/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/session/cookie.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/session/memory.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/session/session.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-session/session/store.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/HISTORY.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/auth_provider.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/defaultAuthProviders.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/gssapi.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/mongo_credentials.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/mongocr.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/plain.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/scram.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/sspi.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/x509.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/apm.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/command_result.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/commands.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/connect.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/connection.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/logger.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/msg.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/pool.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/utils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/cursor.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/error.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/sdam/monitoring.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/sdam/server.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/sdam/server_description.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/sdam/server_selectors.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/sdam/topology.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/sdam/topology_description.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/sessions.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/tools/smoke_plugin.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/mongos.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/read_preference.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/replset.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/replset_state.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/server.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/shared.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/transactions.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/uri_parser.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/utils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/command.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/compression.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/constants.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/get_more.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/kill_cursors.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/query.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/shared.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/write_command.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/HISTORY.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/LICENSE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/admin.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/aggregation_cursor.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/apm.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/async/.eslintrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/async/async_iterator.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/common.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/ordered.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/unordered.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/change_stream.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/collection.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/command_cursor.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/constants.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/cursor.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/db.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/error.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/download.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/upload.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs/chunk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs/grid_store.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/mongo_client.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/admin_ops.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/aggregate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/collection_ops.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/cursor_ops.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/db_ops.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/mongo_client_ops.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/mongos.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/native_topology.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/replset.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/server.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/topology_base.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/url_parser.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/utils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/on-headers/HISTORY.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/on-headers/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/on-headers/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/on-headers/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/on-headers/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-local/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-local/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-local/lib/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-local/lib/strategy.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-local/lib/utils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-local/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-strategy/.jshintrc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-strategy/.travis.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-strategy/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-strategy/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-strategy/lib/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-strategy/lib/strategy.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-strategy/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/.npmignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/lib/authenticator.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/lib/errors/authenticationerror.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/lib/framework/connect.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/lib/http/request.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/lib/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/lib/middleware/authenticate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/lib/middleware/initialize.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/lib/sessionmanager.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/lib/strategies/session.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pause/.npmignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pause/History.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pause/Makefile" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pause/Readme.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pause/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pause/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/random-bytes/HISTORY.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/random-bytes/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/random-bytes/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/random-bytes/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/random-bytes/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uid-safe/HISTORY.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uid-safe/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uid-safe/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uid-safe/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/node_modules/uid-safe/package.json" afterPath="" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/utils.js" afterPath="$PROJECT_DIR$/utils.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,61 +186,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
+      <file leaf-file-name="enrollmentRequest.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/enrollmentRequest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teacher.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/teacher.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="57" column="25" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/user.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="supervisor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/supervisor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="56" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="degreeProgram.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/degreeProgram.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="105">
+              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -96,28 +199,58 @@
       <file leaf-file-name="department.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/department.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="degreeProgram.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/degreeProgram.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coursework.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/coursework.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enrollmentRequest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/enrollmentRequest.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="360">
+              <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faculty.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/faculty.js">
+      <file leaf-file-name="teacher.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/teacher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="supervisor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/supervisor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="46" column="45" lean-forward="false" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -126,8 +259,28 @@
       <file leaf-file-name="student.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/student.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="286">
+              <caret line="38" column="37" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="faculty.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/faculty.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="33" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initDB.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initDB.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -138,6 +291,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>es</find>
+      <find>console.log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,20 +300,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/initDB.js" />
         <option value="$PROJECT_DIR$/db.js" />
-        <option value="$PROJECT_DIR$/utils.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/models/enrollmentRequest.js" />
-        <option value="$PROJECT_DIR$/models/department.js" />
-        <option value="$PROJECT_DIR$/models/degreeProgram.js" />
         <option value="$PROJECT_DIR$/models/coursework.js" />
-        <option value="$PROJECT_DIR$/models/faculty.js" />
         <option value="$PROJECT_DIR$/models/user.js" />
+        <option value="$PROJECT_DIR$/utils.js" />
+        <option value="$PROJECT_DIR$/models/student.js" />
         <option value="$PROJECT_DIR$/models/supervisor.js" />
         <option value="$PROJECT_DIR$/models/teacher.js" />
-        <option value="$PROJECT_DIR$/models/student.js" />
+        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/api.js" />
+        <option value="$PROJECT_DIR$/initDB.js" />
+        <option value="$PROJECT_DIR$/models/faculty.js" />
+        <option value="$PROJECT_DIR$/models/department.js" />
+        <option value="$PROJECT_DIR$/models/degreeProgram.js" />
       </list>
     </option>
   </component>
@@ -253,12 +407,12 @@
       <workItem from="1554750642420" duration="8628000" />
       <workItem from="1554822427860" duration="4891000" />
       <workItem from="1555170084381" duration="4636000" />
-      <workItem from="1555249093596" duration="24544000" />
+      <workItem from="1555249093596" duration="35200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43789000" />
+    <option name="totallyTimeSpent" value="54445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -268,11 +422,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22853687" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43530834" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2648126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -280,7 +435,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -292,14 +446,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/utils.js</url>
-          <line>4</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
@@ -470,14 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mongoose/tools/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -550,55 +688,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="163" column="3" lean-forward="true" selection-start-line="163" selection-start-column="3" selection-end-line="163" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/coursework.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/degreeProgram.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/department.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/enrollmentRequest.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/faculty.js">
+    <entry file="file://$PROJECT_DIR$/models/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jsonwebtoken/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
@@ -606,50 +728,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        <state relative-caret-position="-478">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/supervisor.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="56" selection-end-column="25" />
+        <state relative-caret-position="360">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/student.js">
+    <entry file="file://$PROJECT_DIR$/initDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="165">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/teacher.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="57" column="25" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+        <state relative-caret-position="150">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.js">
+    <entry file="file://$PROJECT_DIR$/models/supervisor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="553">
+          <caret line="46" column="45" lean-forward="false" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api.js">
+    <entry file="file://$PROJECT_DIR$/models/coursework.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/degreeProgram.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/department.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/student.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="38" column="37" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/faculty.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="33" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/enrollmentRequest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding />
         </state>
       </provider>

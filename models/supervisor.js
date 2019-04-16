@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const User = require('./user');
+const encrypt = require('../utils').encrypt;
+const ROLE = require('../utils').ROLE;
 
 const SupervisorSchema = new mongoose.Schema({
 	email: {
 		type: String,
-		index: true
-	},
-	password: {
-		type: String
+		index: true,
+		unique: true
 	},
 	name: {
 		type: String
@@ -25,7 +25,7 @@ const SupervisorSchema = new mongoose.Schema({
 
 SupervisorSchema.methods.create = (data) => {
 	return new Promise((res, rej) => {
-		Supervisor.findOne({email: data.email}, (er, existingSupervisor) => {
+		User.findOne({email: data.email}, (er, existingSupervisor) => {
 			if (er) {
 				rej(er);
 				return;
@@ -43,8 +43,8 @@ SupervisorSchema.methods.create = (data) => {
 				} else {
 					const user = new User({
 						email: supervisor.email,
-						password: supervisor.password,
-						role: 'Supervisor',
+						password: encrypt(data.password),
+						role: ROLE.supervisor,
 						pointer: supervisor._id
 					});
 					user.populate({
