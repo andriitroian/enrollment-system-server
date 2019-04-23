@@ -4,26 +4,35 @@ const encrypt = require('../utils').encrypt;
 const ROLE = require('../utils').ROLE;
 
 const SupervisorSchema = new mongoose.Schema({
-	email: {
-		type: String,
-		index: true,
-		unique: true
+		email: {
+			type: String,
+			index: true,
+			unique: true
+		},
+		name: String,
+		surname: String,
+		facultyCode: String,
+		departmentCode: String
 	},
-	name: {
-		type: String
-	},
-	surname: {
-		type: String
-	},
-	faculty: {
-		type: String
-	},
-	department: {
-		type: String
-	}
+	{
+		toJSON: { virtuals: true }
+	});
+
+SupervisorSchema.virtual('faculty', {
+	ref: 'Faculty',
+	localField: 'facultyCode',
+	foreignField: 'code',
+	justOne: true
 });
 
-SupervisorSchema.methods.create = (data) => {
+SupervisorSchema.virtual('department', {
+	ref: 'Department',
+	localField: 'departmentCode',
+	foreignField: 'code',
+	justOne: true
+});
+
+SupervisorSchema.statics.new = (data) => {
 	return new Promise((res, rej) => {
 		User.findOne({email: data.email}, (er, existingSupervisor) => {
 			if (er) {
@@ -47,21 +56,12 @@ SupervisorSchema.methods.create = (data) => {
 						role: ROLE.supervisor,
 						pointer: supervisor._id
 					});
-					user.populate({
-						path: 'pointer',
-						model: Supervisor
-					}, (_err, _user) => {
-						if (_err) {
-							rej(_err);
-							return;
+					user.save((err, user) => {
+						if (err) {
+							rej(err);
+						} else {
+							res(user);
 						}
-						_user.save((err, user) => {
-							if (err) {
-								rej(err);
-							} else {
-								res(user);
-							}
-						});
 					});
 				}
 			});

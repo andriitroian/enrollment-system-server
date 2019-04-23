@@ -4,26 +4,36 @@ const encrypt = require('../utils').encrypt;
 const ROLE = require('../utils').ROLE;
 
 const TeacherSchema = new mongoose.Schema({
-	email: {
-		type: String,
-		index: true,
-		unique: true
+		email: {
+			type: String,
+			index: true,
+			unique: true
+		},
+		name: String,
+		surname: String,
+		facultyCode: String,
+		departmentCode: String,
+		load: Number
 	},
-	name: {
-		type: String
-	},
-	surname: {
-		type: String
-	},
-	faculty: {
-		type: String
-	},
-	department: {
-		type: String
-	}
+	{
+		toJSON: { virtuals: true }
+	});
+
+TeacherSchema.virtual('faculty', {
+	ref: 'Faculty',
+	localField: 'facultyCode',
+	foreignField: 'code',
+	justOne: true
 });
 
-TeacherSchema.methods.create = (data) => {
+TeacherSchema.virtual('department', {
+	ref: 'Department',
+	localField: 'departmentCode',
+	foreignField: 'code',
+	justOne: true
+});
+
+TeacherSchema.statics.new = (data) => {
 	return new Promise((res, rej) => {
 		User.findOne({email: data.email}, (er, existingTeacher) => {
 			if (er) {
@@ -35,7 +45,7 @@ TeacherSchema.methods.create = (data) => {
 				rej('USER_EXISTS');
 				return;
 			}
-
+			
 			const teacher = new Teacher(data);
 			teacher.save((error, teacher) => {
 				if (error) {
@@ -47,21 +57,12 @@ TeacherSchema.methods.create = (data) => {
 						role: ROLE.teacher,
 						pointer: teacher._id
 					});
-					user.populate({
-						path: 'pointer',
-						model: Teacher
-					}, (_err, _user) => {
-						if (_err) {
-							rej(_err);
-							return;
+					user.save((err, user) => {
+						if (err) {
+							rej(err);
+						} else {
+							res(user);
 						}
-						_user.save((err, user) => {
-							if (err) {
-								rej(err);
-							} else {
-								res(user);
-							}
-						});
 					});
 				}
 			});

@@ -6,13 +6,13 @@ const DepartmentSchema = new mongoose.Schema({
 		index: true,
 		unique: true
 	},
-	faculty: String,
+	facultyCode: String,
 	name: String
 });
 
-DepartmentSchema.methods.create = (data) => {
+DepartmentSchema.statics.new = (data) => {
 	return new Promise((resolve, reject) => {
-		Department.find({code: data.code}, (err, existingDepartment) => {
+		Department.findOne({code: data.code}, (err, existingDepartment) => {
 			if (err) {
 				reject(err);
 				return;

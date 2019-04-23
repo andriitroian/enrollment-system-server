@@ -1,17 +1,38 @@
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 
-module.exports.encrypt = (password) => {
+const tokenSecretKey = 'y_andreia_krasivaia_popa';
+
+const encrypt = (password) => {
 	if (!password) { return ''; }
 	return bcrypt.hashSync(password, 10);
 };
 
-module.exports.checkPassword = (password, hash) => {
-	if (!password || !hash) { return false; }
+const checkPassword = (password, hash) => {
+	if (!password || !hash) {
+		console.error('empty password or hash');
+		return false;
+	}
 	return bcrypt.compareSync(password, hash);
 };
 
-module.exports.ROLE = {
+const ROLE = {
 	student: 'Student',
 	supervisor: 'Supervisor',
 	teacher: 'Teacher'
+};
+
+const getToken = (user) => {
+	const payload = { subject: user._id };
+	return jwt.sign(payload, tokenSecretKey);
+};
+
+const decryptToken = (token) => jwt.verify(token, tokenSecretKey);
+
+module.exports = {
+	encrypt,
+	checkPassword,
+	ROLE,
+	getToken,
+	decryptToken,
 };

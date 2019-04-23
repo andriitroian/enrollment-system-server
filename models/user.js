@@ -7,12 +7,8 @@ const UserSchema = new mongoose.Schema({
 		index: true,
 		unique: true
 	},
-	password: {
-		type: String
-	},
-	role: {
-		type: String
-	},
+	password: String,
+	role: String,
 	pointer: {type: ObjectId}
 });
 

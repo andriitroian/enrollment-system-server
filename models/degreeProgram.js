@@ -6,13 +6,13 @@ const DegreeProgramSchema = new mongoose.Schema({
 		index: true,
 		unique: true
 	},
-	faculty: String,
+	facultyCode: String,
 	name: String
 });
 
-DegreeProgramSchema.methods.create = (data) => {
+DegreeProgramSchema.statics.new = (data) => {
 	return new Promise((resolve, reject) => {
-		DegreeProgram.find({code: data.code}, (err, existingDegreeProgram) => {
+		DegreeProgram.findOne({code: data.code}, (err, existingDegreeProgram) => {
 			if (err) {
 				reject(err);
 				return;

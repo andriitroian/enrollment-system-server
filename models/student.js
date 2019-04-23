@@ -4,29 +4,36 @@ const encrypt = require('../utils').encrypt;
 const ROLE = require('../utils').ROLE;
 
 const StudentSchema = new mongoose.Schema({
-	email: {
-		type: String,
-		index: true,
-		unique: true
+		email: {
+			type: String,
+			index: true,
+			unique: true
+		},
+		name: String,
+		surname: String,
+		facultyCode: String,
+		degreeProgramCode: String,
+		year: Number
 	},
-	name: {
-		type: String
-	},
-	surname: {
-		type: String
-	},
-	faculty: {
-		type: String
-	},
-	degreeProgram: {
-		type: String
-	},
-	year: {
-		type: Number
-	}
+	{
+		toJSON: { virtuals: true }
+	});
+
+StudentSchema.virtual('faculty', {
+	ref: 'Faculty',
+	localField: 'facultyCode',
+	foreignField: 'code',
+	justOne: true
 });
 
-StudentSchema.methods.create = (data) => {
+StudentSchema.virtual('degreeProgram', {
+	ref: 'DegreeProgram',
+	localField: 'degreeProgramCode',
+	foreignField: 'code',
+	justOne: true
+});
+
+StudentSchema.statics.new = (data) => {
 	return new Promise((res, rej) => {
 		User.findOne({email: data.email}, (er, existingUser) => {
 			if (er) {
@@ -59,21 +66,12 @@ StudentSchema.methods.create = (data) => {
 						role: ROLE.student,
 						pointer: student._id
 					});
-					user.populate({
-						path: 'pointer',
-						model: Student
-					}, (_err, _user) => {
-						if (_err) {
-							rej(_err);
-							return;
+					user.save((err, user) => {
+						if (err) {
+							rej(err);
+						} else {
+							res(user);
 						}
-						_user.save((err, user) => {
-							if (err) {
-								rej(err);
-							} else {
-								res(user);
-							}
-						});
 					});
 				}
 			});

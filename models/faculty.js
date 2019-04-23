@@ -9,14 +9,15 @@ const FacultySchema = new mongoose.Schema({
 	name: String
 });
 
-FacultySchema.methods.create = (data) => {
+FacultySchema.statics.new = (data) => {
 	return new Promise((resolve, reject) => {
-		Faculty.find({code: data.code}, (err, existingFaculty) => {
+		Faculty.findOne({code: data.code}, (err, existingFaculty) => {
 			if (err) {
 				reject(err);
 				return;
 			}
 			if (existingFaculty) {
+				console.log(existingFaculty);
 				reject('FACULTY_EXISTS');
 				return;
 			}
